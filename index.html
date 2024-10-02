@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="navdp">
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid ">
+          <a class="navbar-brand " href="#"><svg  style="margin-bottom:3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
+          </svg>Foodie</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="home" aria-current="page" href="#tod">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./help.html">help</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Login
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./signin.html">Sig in</a></li>
+                  <li><a class="dropdown-item" href="./signup.html">Sign up</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Orders</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filter
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#home"> Nearby</a></li>
+                    <li><a class="dropdown-item" href="#"> Recently ordered</a></li>
+                    <li><a class="dropdown-item" href="#"> High Rating</a></li>
+                    <li><a class="dropdown-item" href="#"> Offers</a></li>
+                   
+                  </ul>
+                </li>
+               </ul>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+      
+
+  <div >
+
+  
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/images/foodie.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/buger.png" class="d-block w-100 " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/chicken.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="today" id="tod"><h4>TODAY HIGHLIGHTS</h4></div>
+  <div class="highlights">
+    <div class="high1 card cardone" style="border: 2px solid white; border-radius: 10px;padding: 2%;" >
+      <div class="highimg"><img src="./assets/images/spicechicken.png" style="width: 100%;"></div>
+      <div><p style="text-align: center;">Spicechicken</p></div>
+      <div><ul>
+        <li>Restaurant: RR</li>
+        <li>Cost: 399</li>
+        <li>Delivery Charge: 40(with in 30 min)</li>
+      </ul></div>
+      <div style="display: flex;justify-content: center;"><button type="button" class="btn btn-info"><a href="./order.html" style="text-decoration: none; color: inherit;">order</a></button></div>
+    </div>
+    <div  class="high1 card cardtwo" style="border: 2px solid white; border-radius: 10px;padding: 2%;">
+      <div class="highimg"><img src="./assets/images/grilledchicken.png" style="width: 100%;"></div>
+      <div><p style="text-align: center;">Grilled chicken</p></div>
+      <div><ul>
+        <li>Restaurant: DP</li>
+        <li>Cost: 299</li>
+        <li>Delivery Charge: 40(with in 30 min)</li>
+      </ul></div>
+      <div style="display: flex;justify-content: center;"><button type="button" class="btn btn-info"><a href="./order.html" style="text-decoration: none; color: inherit;">order</a></button></div>
+    </div>
+ </div>
+
+   
+
+ <div class="highlights">
+  <div class="high1 card cardone" style="border: 2px solid white; border-radius: 10px;padding: 2%;" >
+    <div class="highimg"><img src="./assets/images/buger.png " style="width: 100%;"></div>
+    <div><p style="text-align: center;">Fried vbdcjshxbkad</p></div>
+    <div><ul>
+      <li>Restaurant: DP</li>
+      <li>Cost: 399</li>
+      <li>Delivery Charge: 40(with in 30 min)</li>
+    </ul></div>
+    <div style="display: flex;justify-content: center;"><button type="button" class="btn btn-info"><a href="./order.html" style="text-decoration: none; color: inherit;">order</a></button></div>
+  </div>
+  <div  class="high1 card cardtwo" style="border: 2px solid white; border-radius: 10px;padding: 2%;">
+    <div class="highimg"><img src="./assets/images/chicken.png" style="width: 100%;"></div>
+    <div><p style="text-align: center;">Juicy Chicken</p></div>
+    <div><ul>
+      <li>Restaurant: Thala Thalapathy</li>
+      <li>Cost: 299</li>
+      <li>Delivery Charge: 40(with in 30 min)</li>
+    </ul></div>
+    <div style="display: flex;justify-content: center;"><button type="button" class="btn btn-info"><a href="./order.html" style="text-decoration: none; color: inherit;">order</a></button></div>
+  </div>
+</div>
+
+
+
+<div class="highlights">
+  <div class="high1 card cardone" style="border: 2px solid white; border-radius: 10px;padding: 2%;" >
+    <div class="highimg"><img src="./assets/images/chickencurry.png " style="width: 100%;"></div>
+    <div><p style="text-align: center;">Chicken Curry</p></div>
+    <div><ul>
+      <li>Restaurant: DP</li>
+      <li>Cost: 149</li>
+      <li>Delivery Charge: 40(with in 30 min)</li>
+    </ul></div>
+    <div style="display: flex;justify-content: center;"><button type="button" class="btn btn-info"><a href="./order.html" style="text-decoration: none; color: inherit;">order</a></button></div>
+  </div>
+  <div  class="high1 card cardtwo" style="border: 2px solid white; border-radius: 10px;padding: 2%;">
+    <div class="highimg"><img src="./assets/images/pizza.png " style="width: 100%;"></div>
+    <div><p style="text-align: center;">Pizza</p></div>
+    <div><ul>
+      <li>Restaurant: RRR</li>
+      <li>Cost: 99</li>
+      <li>Delivery Charge: 40(with in 30 min)</li>
+    </ul></div>
+    <div style="display: flex;justify-content: center;"><button type="button" class="btn btn-info"><a href="./order.html" style="text-decoration: none; color: inherit;">order</a></button></div>
+  </div>
+</div>
+
+<div class="highlights">
+  <div class="high1 card cardone" style="border: 2px solid white; border-radius: 10px;padding: 2%;" >
+    <div class="highimg"><img src="./assets/images/paneer.png " style="width: 100%;"></div>
+    <div><p style="text-align: center;">Paneer</p></div>
+    <div><ul>
+      <li>Restaurant: Thala Thalapathy</li>
+      <li>Cost: 199</li>
+      <li>Delivery Charge: 40(with in 30 min)</li>
+    </ul></div>
+    <div style="display: flex;justify-content: center;"><button type="button" class="btn btn-info"><a href="./order.html" style="text-decoration: none; color: inherit;">order</a></button></div>
+  </div>
+  <div  class="high1 card cardtwo" style="border: 2px solid white; border-radius: 10px;padding: 2%;">
+    <div class="highimg"><img src="./assets/images/pizzafood.png" style="width: 100%;"></div>
+    <div><p style="text-align: center;">Pizza</p></div>
+    <div><ul>
+      <li>Restaurant: DP</li>
+      <li>Cost: 299</li>
+      <li>Delivery Charge: 40(with in 30 min)</li>
+    </ul></div>
+    <div style="display: flex;justify-content: center;"><button type="button" class="btn btn-info"><a href="./order.html" style="text-decoration: none; color: inherit;">order</a></button></div>
+  </div>
+</div>
+<footer class="py-3 my-4">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="#tod" class="nav-link px-2 text-body-secondary">Home</a></li>
+    <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Foodie</a></li>
+    <li class="nav-item"><a href="./help.html" class="nav-link px-2 text-body-secondary">Help</a></li>
+  </ul>
+  <p class="text-center text-body-secondary">© 2024 FOODIE Author DP, ALL  Rights Reserverd</p>
+</footer>
+
+
+
+
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

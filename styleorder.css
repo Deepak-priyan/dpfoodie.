@@ -1,0 +1,29 @@
+.inpu{
+    width: 80%;
+    border:2px solid #A2CA71; 
+    padding:2%;
+    border-radius:20px;
+}
+.od{
+    display: flex; width: 100%;justify-content: center;margin-top:5%;
+}
+.odin{
+    width:50%; border:2px solid white; padding:2%;border-radius:20px;
+}
+.divin{
+    display: flex; justify-content: center;margin-top:2%;
+}
+
+@media(max-width:500px)
+{
+    .inpu{
+        width: 80%;
+        border:1px solid #A2CA71; 
+        padding:4%;
+        border-radius:20px;
+        font-size: xx-small;
+    }
+    button{
+        margin-top: 2%;
+}
+}
